@@ -1,0 +1,23 @@
+Package: ShannonGen
+Title: Estimation of the Shannon Diverstity Index
+Version: 0.0.1
+Date: 2020-05-11
+Author@R: 
+    person(given = "Maciej K.",
+           family = "Konopinski",
+           role = c("aut", "cre"),
+           email = "mkonop@wp.pl",
+           comment = c(ORCID = "0000-0003-0893-0846"))
+Author: Maciej K. Konopinski [aut, cre]
+Maintainer: Maciej K. Konopinski <mkonop@wp.pl>
+Description: An R function for calculation of Shannon Diversity Index using either 
+    of the four H estimators (Shannon 1948, Zahl 1977, Chao & Shen 2003, Chao et al. 2013).
+Depends: R (>= 3.6)
+Imports: adegenet
+License: GPL (>=3.0) + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LazyLoad: yes
+URL: https://github.com/konopinski/Shannon/
+BugReports: https://github.com/konopinski/Shannon/issues
+RoxygenNote: 7.1.0
