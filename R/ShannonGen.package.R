@@ -16,6 +16,8 @@
 #'  \href{https://github.com/thibautjombart/adegenet}{\code{ adegenet}} packages.
 #' Data should be in \emph{genind} format.\cr
 #' 
+#' @author Maciej K. Konopinski 
+#' 
 #' @references Chao A., Ma K.H., Hsieh T.C. and Chiu C.H. 2016. SpadeR (Species-richness
 #' Prediction And Diversity Estimation in R): an R package in CRAN. Program and User's
 #' Guide also published at 

@@ -31,8 +31,9 @@
 #' @references Chao A., Wang Y.T., Jost L. 2013. Entropy and thespecies accumulation curve:
 #'      a nearly unbiased estimator ofentropy via discovery rates of new species.
 #'      \emph{Methods in Ecology and Evolution} 4:1091-1100. DOI: 10.1111/2041-210X.12108
-#' @references Konopinski MK. 2020.  Shannon diversity index: A call to replace the original
-#'      Shannon's formula with the unbiased estimators. \emph{PeerJ, in press}
+#' @references Konopinski MK. 2020.  Shannon diversity index: a call to replace the original Shannon’s 
+#' 		formula with unbiased estimator in the population genetics studies. \emph{PeerJ, 8:e9391}
+#' 		\href{https://doi.org/10.7717/peerj.9391}
 #' @references Shannon C.E. 1948. A Mathematical Theory of Communication.
 #'      \emph{The Bell System Technical Journal}, 27:379-423,623-656.
 #' @references Zahl S. 1977. Jackknifing An Index of Diversity. \emph{Ecology} 58 (4): 907-913.
