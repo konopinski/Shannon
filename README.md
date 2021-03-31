@@ -5,6 +5,7 @@ Package ShannonGen - calculating Shannon Index estimators from microsatellite da
 To install this package copy the following lines into your R console:
 
 `if (!"devtools" %in% installed.packages()) install.packages("devtools")`
+
 `devtools::install_github("konopinski/Shannon")`
 
 ### Citation:
