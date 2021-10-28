@@ -1,6 +1,2 @@
-^ShannonGen\.Rproj$
+^.*\.Rproj$
 ^\.Rproj\.user$
-^ShannonGen\.R
-^Shannon\.Rproj
-^Shannon4\.R
-^Package_making\.R
