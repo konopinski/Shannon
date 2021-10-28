@@ -1,9 +1,15 @@
-#' @title ShannonGen function \cr (modified code from \code{SpadeR})
+#' @title Shannon.gen function \cr (modified code from \code{SpadeR})
 #'
-#' @keywords ShannonGen
+#' @keywords Shannon.gen
 #' 
-#' @param gInd a \emph{genind} object. For details on \emph{genind} objects see 
-#'       \href{https://github.com/thibautjombart/adegenet}{\code{adegenet}} documentation.
+#' @description The function calculates four different Shannon Diversity Index \emph{H} from 
+#'    \emph{genind} object. estimators. For details on \emph{genind} objects see 
+#'    \href{https://github.com/thibautjombart/adegenet}{\code{adegenet}} documentation. 
+#'    The most precise result you will obtain using Zahl 1977 estimator.  
+#'    For details on the performance of Shannon \emph{H} estimators
+#'    see Konopinski MK 2020
+#'     
+#' @param gInd a \emph{genind} object. 
 #' @param estimator a character string, a vector or a list of \emph{H} estimators that
 #'              will be estimated:
 #'              \itemize{
@@ -12,8 +18,7 @@
 #'                \item\emph{sh}{ - the original Shannon diversity index (Shannon 1948),}
 #'                \item\emph{z}{ - Zahl 1977 (\strong{default}).}
 #'                }
-#' @details For the details on performance of Shannon \emph{H} estimators
-#'  see Konopinski MK 2020 (\emph{in press})
+#' @details 
 #'  The functions \emph{MLE}, \emph{Z}, \emph{CS} and \emph{Ch} were copied from \code{Diversity} function
 #'  from \href{https://github.com/AnneChao/SpadeR}{\code{SpadeR}} package
 #'  (WARNING: the function was tested only on microsatellite data)
@@ -33,23 +38,15 @@
 #'      \emph{Methods in Ecology and Evolution} 4:1091-1100. DOI: 10.1111/2041-210X.12108
 #' @references Konopinski MK. 2020.  Shannon diversity index: a call to replace the original Shannon’s 
 #' 		formula with unbiased estimator in the population genetics studies. \emph{PeerJ, 8:e9391}
-#' 		\href{https://doi.org/10.7717/peerj.9391}
+#' 		\href{https://doi.org/10.7717/peerj.9391}{https://doi.org/10.7717/peerj.9391}
 #' @references Shannon C.E. 1948. A Mathematical Theory of Communication.
 #'      \emph{The Bell System Technical Journal}, 27:379-423,623-656.
 #' @references Zahl S. 1977. Jackknifing An Index of Diversity. \emph{Ecology} 58 (4): 907-913.
 #'      DOI: 10.2307/1936227
-#' @examples
-#' data(Dzik) ## sample genotypes from wildboars
-#' 
-#' ## Default usage:
-#' ShannonGen(Dzik) ## returns Zahl 1977 unbiased estimator
-#'
-#' ## Calculating all the estimators:
-#' ShannonGen(Dzik, estimator = c("z", "sh", "cs", "ch"))
 #' 
 #' @export
 
-ShannonGen <- function(gInd, estimator = NULL) {
+Shannon.gen <- function(gInd, estimator = NULL) {
   MLE = function(X) {
     X = X[X > 0]
     n = sum(X)
@@ -107,7 +104,7 @@ ShannonGen <- function(gInd, estimator = NULL) {
            print (paste(i,"Letter code OK")) else {
              print(paste("Wrong letter code:",i))
     stop("<estimator> option is not correct. 
-          For details see help: ?ShannonGen")}}
+          For details see help: ?Shannon.gen")}}
 
   if ("sh" %in% estimator) {
     out[["Shannon_1949"]] <-

@@ -1,7 +1,7 @@
 Package: ShannonGen
-Title: Estimation of the Shannon Diverstity Index
-Version: 0.0.1
-Date: 2020-05-11
+Title: Estimation of the Shannon Diverstity Index and Average Weighted Nucleotide Diversity
+Version: 0.0.2
+Date: 2021-10-28
 Author@R: 
     person(given = "Maciej K.",
            family = "Konopinski",
@@ -10,14 +10,17 @@ Author@R:
            comment = c(ORCID = "0000-0003-0893-0846"))
 Author: Maciej K. Konopinski [aut, cre]
 Maintainer: Maciej K. Konopinski <mkonop@wp.pl>
-Description: An R function for calculation of Shannon Diversity Index using either 
-    of the four H estimators (Shannon 1948, Zahl 1977, Chao & Shen 2003, Chao et al. 2013).
-Depends: R (>= 3.6)
-Imports: adegenet
+Description: A package to calculate Shannon Diversity Index and Average Weighted Nucleotide Diversity.
+Imports: 
+    adegenet,
+    ape
 License: GPL (>=3.0) + file LICENSE
 Encoding: UTF-8
 LazyData: true
 LazyLoad: yes
 URL: https://github.com/konopinski/Shannon/
 BugReports: https://github.com/konopinski/Shannon/issues
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.2.9000
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
